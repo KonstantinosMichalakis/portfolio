@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Konstantinos Michalakis Portfolio</title>
+  <title>Konstantinos Michalakis | Portfolio</title>
   <style>
     /* ============================================================
        CSS RESET & BASE
@@ -503,6 +503,12 @@
       position: relative;
       z-index: 1;
     }
+    .skill-card__icon img {
+      max-width: 36px;
+      max-height: 36px;
+      object-fit: contain;
+      vertical-align: middle;
+    }
     .skill-card__name {
       font-weight: 600;
       font-size: 0.95rem;
@@ -713,7 +719,7 @@
             <div class="stat-card__label">Languages</div>
           </div>
           <div class="stat-card">
-            <div class="stat-card__value">1st</div>
+            <div class="stat-card__value">3rd</div>
             <div class="stat-card__label">Year @ DUTH</div>
           </div>
           <div class="stat-card">
@@ -762,7 +768,8 @@
   <!-- ======== FOOTER ======== -->
   <footer>
     <div class="container">
-      &copy; 2026 Konstantinos Michalakis &mdash; built with a lot of coffee.
+      &copy; 2026 Konstantinos Michalakis &mdash; built with a lot of coffee
+      
     </div>
   </footer>
 
@@ -774,12 +781,24 @@
          DATA
       ============================================================== */
       const SKILLS = [
-        { name: 'HTML', icon: '🌐', level: '90%' },
-        { name: 'CSS', icon: '🎨', level: '85%' },
-        { name: 'Python', icon: '🐍', level: '88%' },
-        { name: 'C++', icon: '⚡', level: '80%' },
-        { name: 'Java', icon: '☕', level: '78%' },
-        { name: 'Linux', icon: '🐧', level: '85%' },
+        { name: 'HTML',
+          icon: '<img src="html-logo.png" alt="HTML" width="36" height="36">',
+          level: '90%' },
+        { name: 'CSS',
+          icon: '<img src="css-logo.png" alt="CSS" width="36" height="36">',
+          level: '85%' },
+        { name: 'Python',
+          icon: '<img src="python-logo.png" alt="Python" width="36" height="36">',
+          level: '88%' },
+        { name: 'C++',
+          icon: '<img src="cpp-logo.png" alt="C++" width="36" height="36">',
+          level: '80%' },
+        { name: 'Java',
+          icon: '<img src="java-logo.png" alt="Java" width="36" height="36">',
+          level: '78%' },
+        { name: 'Linux',
+          icon: '🐧',
+          level: '85%' },
       ];
 
       const TYPING_WORDS = [
